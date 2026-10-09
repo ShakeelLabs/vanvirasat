@@ -118,7 +118,6 @@ export default function Home() {
       <div className="topline">
         <div className="container topline-inner">
           <span>MEANINGFUL JOURNEYS · LOCAL CONNECTIONS</span>
-          <span>DUNGARPUR, RAJASTHAN · INDIA</span>
         </div>
       </div>
 
