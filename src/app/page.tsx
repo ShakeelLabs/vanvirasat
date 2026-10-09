@@ -396,6 +396,16 @@ export default function Home() {
         </div>
       </footer>
 
+      <div className="mobile-booking-bar" aria-label="Quick trip booking">
+        <div className="mobile-booking-copy">
+          <span>Planning a visit?</span>
+          <strong>Make it a local journey.</strong>
+        </div>
+        <button className="btn btn-primary" type="button" onClick={() => startBooking()}>
+          Plan your trip <ArrowRight size={16} />
+        </button>
+      </div>
+
       {bookingOpen && (
         <div
           className="dialog-backdrop"
@@ -443,7 +453,7 @@ export default function Home() {
               </div>
               <div className="field">
                 <label htmlFor="customer-phone">Phone number</label>
-                <input id="customer-phone" name="phone" type="tel" autoComplete="tel" placeholder="+91" required />
+                <input id="customer-phone" name="phone" type="tel" autoComplete="tel" placeholder="+91" inputMode="tel" autoComplete="tel" required />
               </div>
               <div className="field">
                 <label htmlFor="dialog-date">Preferred travel date</label>
@@ -474,7 +484,7 @@ export default function Home() {
                 </select>
               </div>
               <button className="btn btn-primary" style={{ width: "100%", marginTop: 7 }} type="submit">
-                Prepare inquiry <ArrowRight size={16} />
+                Open email to send inquiry <ArrowRight size={16} />
               </button>
               <p className="form-disclaimer">
                 This demo collects no data on a server and does not take payments. Sending an inquiry opens your email app. A booking is confirmed only after availability, final pricing and terms have been agreed.
