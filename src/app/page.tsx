@@ -9,11 +9,7 @@ import {
   Compass,
   Leaf,
   MapPin,
-  Menu,
-  Mountain,
-  ShieldCheck,
   Users,
-  Waves,
   X,
 } from "lucide-react";
 
@@ -69,7 +65,6 @@ export default function Home() {
   const [travelers, setTravelers] = useState("2");
   const [selectedExperience, setSelectedExperience] = useState("weekend");
   const [bookingOpen, setBookingOpen] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [bookingMessage, setBookingMessage] = useState("");
 
   const experience = useMemo(
