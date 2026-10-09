@@ -453,7 +453,7 @@ export default function Home() {
               </div>
               <div className="field">
                 <label htmlFor="customer-phone">Phone number</label>
-                <input id="customer-phone" name="phone" type="tel" autoComplete="tel" placeholder="+91" inputMode="tel" autoComplete="tel" required />
+                <input id="customer-phone" name="phone" type="tel" autoComplete="tel" placeholder="+91" inputMode="tel" required />
               </div>
               <div className="field">
                 <label htmlFor="dialog-date">Preferred travel date</label>
